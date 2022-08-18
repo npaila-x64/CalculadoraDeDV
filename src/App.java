@@ -28,7 +28,7 @@ public class App {
 
         String rutSinDVInvertido = invertirString(rutSinDV);
         int DVNumerico = procesarRut(rutSinDVInvertido);
-        String DV = convertirRutNumericoADV(DVNumerico);
+        String DV = convertirDVNumericoADVLiteral(DVNumerico);
 
         return DV;
     }
@@ -78,7 +78,7 @@ public class App {
         return ((int) a);
     }
 
-    private String convertirRutNumericoADV(int s) {
+    private String convertirDVNumericoADVLiteral(int s) {
         switch (s) {
             case 10:
                 return "k";
